@@ -30,6 +30,11 @@ El sistema incluye pruebas que verifican:
 - **Validación**: Dosis de antibióticos entre 400-600 Kg
 - **Búsqueda**: Función buscar_por_cedula() retorna todas las facturas de un cliente
 
+### Ejecucion Pruebas Unitarias
+```bash
+python -m unittest test.test_relaciones -v
+```
+
 ## Arquitectura
 
 - **Modelo**: Contiene las clases del dominio
