@@ -1,0 +1,58 @@
+INSTRUCCIONES PARA EJECUTAR EN WINDOWS
+========================================
+
+REQUISITOS:
+-----------
+- Python 3.6 o superior instalado
+- Verificar instalación: abrir CMD y ejecutar "python --version"
+
+PASOS PARA EJECUTAR:
+--------------------
+
+1. Extraer el archivo ZIP en una carpeta de su preferencia
+
+2. Abrir el Símbolo del sistema (CMD) o PowerShell
+
+3. Navegar a la carpeta del proyecto:
+   cd ruta\donde\extrajo\proyecto_tienda_agricola
+
+4. Ejecutar las pruebas unitarias:
+   python -m unittest test.test_relaciones -v
+
+5. Ejecutar la demostración del sistema:
+   python demo.py
+
+6. Ejecutar el sistema interactivo:
+   python main.py
+
+ESTRUCTURA DEL PROYECTO:
+-------------------------
+proyecto_tienda_agricola\
+├── modelo\                 (Clases del dominio)
+│   ├── cliente.py
+│   ├── factura.py
+│   ├── producto_control.py
+│   ├── control_plagas.py
+│   ├── fertilizante.py
+│   └── antibiotico.py
+├── crud\                   (Operaciones de persistencia)
+│   └── crud_cliente.py
+├── test\                   (Pruebas unitarias)
+│   └── test_relaciones.py
+├── ui\                     (Interfaz de usuario)
+│   └── menu.py
+├── main.py                 (Punto de entrada principal)
+├── demo.py                 (Script de demostración)
+└── README.md               (Documentación completa)
+
+NOTAS:
+------
+- Todas las pruebas unitarias deben pasar correctamente (12 tests)
+- El sistema valida que la dosis de antibióticos esté entre 400-600 Kg
+- La función buscar_por_cedula() está implementada en crud\crud_cliente.py
+- El proyecto usa módulos y namespaces de Python correctamente
+- Cada clase está en un archivo separado dentro del componente modelo
+
+SOPORTE:
+--------
+Para más información, consultar el archivo README.md
